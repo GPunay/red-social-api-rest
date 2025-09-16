@@ -1,0 +1,63 @@
+.home-container {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.home-container h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.post {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.post-author {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #1877f2;
+}
+
+.post-content {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.post-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.post-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #1877f2;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.post-actions button:hover {
+  color: #145dbf;
+}
+
+.post-comments {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.post-comments p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.post-comments strong {
+  color: #1877f2;
+}
