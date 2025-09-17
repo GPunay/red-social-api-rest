@@ -1,38 +1,80 @@
-nav {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #1877f2;
-  padding: 12px 20px;
+  padding: 15px 30px;
   color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
-nav a {
-  margin-right: 15px;
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Lado derecho */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Enlaces */
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   text-decoration: none;
   color: white;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Usuario logueado */
+.nav-user {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   font-weight: bold;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-nav span {
-  margin-right: 10px;
-  font-weight: bold;
-}
-
-nav button {
+/* Botón de logout */
+.nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   padding: 8px 12px;
   border: none;
   background: #fff;
   color: #1877f2;
   border-radius: 6px;
   cursor: pointer;
-  transition: 0.3s;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
-nav button:hover {
+.nav-btn:hover {
   background: #f0f2f5;
+  transform: translateY(-2px);
 }
